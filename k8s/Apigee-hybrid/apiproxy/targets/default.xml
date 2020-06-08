@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TargetEndpoint name="default">
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>SC-client-token</Name>
+            </Step>
+            <Step>
+                <Name>EV-Extract-Token</Name>
+            </Step>
+            <Step>
+                <Name>AM-token</Name>
+            </Step>
+        </Request>
+        <Response/>
+    </PreFlow>
+    <Flows/>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <HTTPTargetConnection>
+        <URL>http://10.51.241.86</URL>
+    </HTTPTargetConnection>
+</TargetEndpoint>
