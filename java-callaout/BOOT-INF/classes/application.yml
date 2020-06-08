@@ -1,0 +1,72 @@
+# Logging #
+#logging:
+#  level:
+#    org:
+#      openlegacy: debug
+
+
+management:
+  health:
+    defaults:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - olprojectinfo
+          - metrics
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8080/.well-known/jwks.json
+
+# Springfox #
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /swagger/swagger.json
+
+# OpenLegacy #
+ol:
+  # OpenLegacy Common Properties (OLCommonProperties) #
+  common:
+    cache:
+      enabled: true
+  license:
+    key: eyJhbGciOiJSUzI1NiJ9.eyJwcm9kdWN0Ijoib3BlbmxlZ2FjeS1jb3JlIiwic3ViIjoib2wiLCJpc3N1ZWRfYXQiOiIyMDIwLTA0LTI3VDE3OjAwOjAwLjAxWiIsInZhbGlkX2ZvciI6MzY1fQ.ZNvRqjy7kt9AzAirtiR4OvGQ9uyQRDYbWEklVvXS_f5QQiyZ7EsZr_K2_AdimV-VXOfkINqn9xhtZ13GH7Ns7xpQhZnfvnzmlIWur9YPAdT-D6A37SCS_CWZcfVk2Xqj0Hj1tpyium_CwtrT0LD-tvGYIow17eTJ-kIfR0gSbxaeECUH7Nv-MVg2WFG-GGPWFuIuol0AUw9-OZ_J_JbW1F0r8n3NCzlUq83omvfGFOHk6VJBjfngreen2kzz21eJ5uGrH2f3w7QivvosCQcoHFrVf6CNjYTfRYlLNVi-7NguEhTE8d3WCoeG-NF89qJRPjUQtjsvD34MN1OJ3MY-qg
+  security:
+    db:
+      init-schema: true
+      clients:
+        - client-id: client_id
+          client-secret: '{noop}client_secret'
+          scope: read,write,trust,ol_admin
+          authorized-grant-types: client_credentials
+
+---
+
+# mainframeTsSdk
+ol:
+  cics:
+    project:
+      mainframeTsSdk:
+        base-url: http://192.86.32.238
+        port: 12345
+        uri-map: oldist3
+        code-page: CP037
+        live: true
+        base-packages:
+          - com.mainframe_ts_sdk.openlegacy
+        user: 
+        password: 
+  license:
+    key: eyJhbGciOiJSUzI1NiJ9.eyJwcm9kdWN0Ijoib3BlbmxlZ2FjeS1jb3JlIiwic3ViIjoib2wiLCJpc3N1ZWRfYXQiOiIyMDIwLTA0LTI3VDE3OjAwOjAwLjAxWiIsInZhbGlkX2ZvciI6MzY1fQ.ZNvRqjy7kt9AzAirtiR4OvGQ9uyQRDYbWEklVvXS_f5QQiyZ7EsZr_K2_AdimV-VXOfkINqn9xhtZ13GH7Ns7xpQhZnfvnzmlIWur9YPAdT-D6A37SCS_CWZcfVk2Xqj0Hj1tpyium_CwtrT0LD-tvGYIow17eTJ-kIfR0gSbxaeECUH7Nv-MVg2WFG-GGPWFuIuol0AUw9-OZ_J_JbW1F0r8n3NCzlUq83omvfGFOHk6VJBjfngreen2kzz21eJ5uGrH2f3w7QivvosCQcoHFrVf6CNjYTfRYlLNVi-7NguEhTE8d3WCoeG-NF89qJRPjUQtjsvD34MN1OJ3MY-qg
+
+
+
+
