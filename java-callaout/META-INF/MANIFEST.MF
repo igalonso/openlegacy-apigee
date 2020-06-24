@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Created-By: Maven Archiver 3.4.0
-Build-Jdk-Spec: 11
-Main-Class: org.springframework.boot.loader.JarLauncher
-Start-Class: com.mainframe_ts_api.openlegacy.MainframeTsApiApplication
-Spring-Boot-Version: 2.2.5.RELEASE
-Spring-Boot-Classes: BOOT-INF/classes/
-Spring-Boot-Lib: BOOT-INF/lib/
-
