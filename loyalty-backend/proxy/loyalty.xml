@@ -1,0 +1,16 @@
+<APIProxy revision="1" name="loyalty">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1593172383529</CreatedAt>
+    <LastModifiedAt>1593172383529</LastModifiedAt>
+    <BasePaths>/v1/loyalty</BasePaths>
+    <Policies></Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources></Resources>
+    <TargetServers></TargetServers>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>
