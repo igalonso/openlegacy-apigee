@@ -139,27 +139,27 @@ app = Flask(__name__)
 #Catalog service
 @app.route('/catalog',methods=['GET', 'POST'])
 def catalogList():
-    return json.dumps(catalog), {'Content-Type': 'application/json;'}
+    return json.dumps(catalog)
 
 @app.route('/catalog/<int:id>')
 def product(id):
     # show the post with the given id, the id is an integer
-    return catalog[id%5], {'Content-Type': 'application/json;'}
+    return catalog[id%5]
 
 #Consummer service
 @app.route('/user/<int:user_id>/consumer',methods=['GET', 'POST'])
 def consumerList():
-    return json.dumps(consumed), {'Content-Type': 'application/json;'}
+    return json.dumps(consumed)
 
 @app.route('/user/<int:user_id>/consumer/<int:id>')
 def consumer(user_id,id):
     # show the post with the given id, the id is an integer
-    return json.dumps(consumed[id%3]), {'Content-Type': 'application/json;'}
+    return json.dumps(consumed[id%3])
 #Recommendation service
 @app.route('/user/<int:user_id>/recommendation/<int:future_points>')
 def recommendation(user_id,future_points):
     # show the post with the given id, the id is an integer
-    return json.dumps(recommendations[(user_id+future_points)%6]), {'Content-Type': 'application/json;'}
+    return json.dumps(recommendations[(user_id+future_points)%6])
     
 if __name__ == "__main__": 
     app.run(host ='0.0.0.0', port = 8080, debug = True)  
