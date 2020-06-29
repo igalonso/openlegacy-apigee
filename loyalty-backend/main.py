@@ -159,7 +159,7 @@ def consumer(user_id,id):
 @app.route('/user/<int:user_id>/recommendation/<int:future_points>')
 def recommendation(user_id,future_points):
     # show the post with the given id, the id is an integer
-    return json.dumps(recommendations[(user_id+future_points)%6])
+    return json.dumps(recommendations[(user_id+future_points)%6]), {'Content-Type': 'application/json;'}
     
 if __name__ == "__main__": 
     app.run(host ='0.0.0.0', port = 8080, debug = True)  

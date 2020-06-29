@@ -34,4 +34,4 @@ spec:
   selector:
     app: openlegacy
   sessionAffinity: None
-  type: ClusterIP
+  type: LoadBalancer
