@@ -4,7 +4,7 @@ from flask import Flask
 
 catalog = [
     {
-        "id": "OLJCESPC7Z",
+        "id": "01t5J000000nwTAQAY",
         "name": "Vintage Typewriter",
         "description": "This typewriter looks good in your living room.",
         "picture": "/static/img/products/typewriter.jpg",
@@ -18,7 +18,7 @@ catalog = [
         ]
     },
     {
-        "id": "2ZYFJ3GM2N",
+        "id": "01t5J000000nwTBQAY",
         "name": "Film Camera",
         "description": "This camera looks like it's a film camera, but it's actually digital.",
         "picture": "/static/img/products/film-camera.jpg",
@@ -32,7 +32,7 @@ catalog = [
         ]
     },
     {
-        "id": "66VCHSJNUP",
+        "id": "01t5J000000nwTDQAY",
         "name": "Vintage Camera Lens",
         "description": "This Vintage Camera Lens give you the crappy look and feel you are searching for.",
         "priceUsd": {
@@ -46,7 +46,7 @@ catalog = [
         ]
     },
     {
-        "id": "335FDSG234",
+        "id": "01t5J000000nwTFQAY",
         "name": "Vintage Laptop",
         "description": "This Vintage Laptop is perfect for Starbucks Instagram photos.",
         "priceUsd": {
@@ -60,7 +60,7 @@ catalog = [
         ]
     },
     {
-        "id": "2345324FRG",
+        "id": "01t5J000000nwTHQAY",
         "name": "Vintage trippd",
         "description": "This Vintage tripod will help to unstabilize all your photos.",
         "priceUsd": {
@@ -108,29 +108,29 @@ consumed = [
 
 recommendations = [
     {
-            "id":"66VCHSJNUP"
+            "id":"01t5J000000nwTHQAY"
     },
     {
-            "id":"335FDSG234",
-            "id":"OLJCESPC7Z"
+            "id":"01t5J000000nwTHQAY",
+            "id":"01t5J000000nwTFQAY"
     },
     {
-            "id":"OLJCESPC7Z",
-            "id":"66VCHSJNUP"
+            "id":"01t5J000000nwTAQAY",
+            "id":"01t5J000000nwTAQAY"
     },
     {
 
-            "id":"335FDSG234",
-            "id":"66VCHSJNUP"
+            "id":"01t5J000000nwTAQAY",
+            "id":"01t5J000000nwTFQAY"
     },
     {
-            "id":"2ZYFJ3GM2N",
-            "id":"OLJCESPC7Z",
-            "id":"66VCHSJNUP"
+            "id":"01t5J000000nwTHQAY",
+            "id":"01t5J000000nwTFQAY",
+            "id":"01t5J000000nwTAQAY"
 
     },
     {
-            "id":"2345324FRG"
+            "id":"01t5J000000nwTBQAY"
     }
 ]
 

@@ -1,4 +1,4 @@
-FROM python:alpine3.7 
+FROM gcr.io/google-appengine/python
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt 

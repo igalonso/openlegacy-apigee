@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "af9c24d4-a055-4929-8fdb-955df95233aa",
+		"name": "Openlegacy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Demo",
+			"item": [
+				{
+					"name": "Get Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://apijams-emea-3-test.apigee.net/v1/loyalty/products?apikey=pXZVTDtwlpy45rvsAMrDDOUqGh9UkpNa",
+							"protocol": "https",
+							"host": [
+								"apijams-emea-3-test",
+								"apigee",
+								"net"
+							],
+							"path": [
+								"v1",
+								"loyalty",
+								"products"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "pXZVTDtwlpy45rvsAMrDDOUqGh9UkpNa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://apijams-emea-3-test.apigee.net/v1/loyalty/products/01t5J000000nwTAQAY?apikey=pXZVTDtwlpy45rvsAMrDDOUqGh9UkpNa",
+							"protocol": "https",
+							"host": [
+								"apijams-emea-3-test",
+								"apigee",
+								"net"
+							],
+							"path": [
+								"v1",
+								"loyalty",
+								"products",
+								"01t5J000000nwTAQAY"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "pXZVTDtwlpy45rvsAMrDDOUqGh9UkpNa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Recommendation",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://apijams-emea-3-test.apigee.net/v1/loyalty/recommendation/0015J000003cJJwQAM?apikey=pXZVTDtwlpy45rvsAMrDDOUqGh9UkpNa",
+							"protocol": "https",
+							"host": [
+								"apijams-emea-3-test",
+								"apigee",
+								"net"
+							],
+							"path": [
+								"v1",
+								"loyalty",
+								"recommendation",
+								"0015J000003cJJwQAM"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "pXZVTDtwlpy45rvsAMrDDOUqGh9UkpNa"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Accounts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://apijams-emea-3-test.apigee.net/v1/loyalty/accounts?apikey=pXZVTDtwlpy45rvsAMrDDOUqGh9UkpNa",
+							"protocol": "https",
+							"host": [
+								"apijams-emea-3-test",
+								"apigee",
+								"net"
+							],
+							"path": [
+								"v1",
+								"loyalty",
+								"accounts"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "pXZVTDtwlpy45rvsAMrDDOUqGh9UkpNa"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Other",
+			"item": [
+				{
+					"name": "Cards from CloudFuntions",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"customerId\": 12345\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://europe-west1-igngar-test.cloudfunctions.net/cards",
+							"protocol": "https",
+							"host": [
+								"europe-west1-igngar-test",
+								"cloudfunctions",
+								"net"
+							],
+							"path": [
+								"cards"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

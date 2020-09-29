@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: loyalty-backend # Name of the container to run
-        image: igalonso/loyalty-backend:1.2 # Container image
+        image: igalonso/loyalty-backend:1.4 # Container image
         env:
         - name: "PORT"
           value: "8080"      
