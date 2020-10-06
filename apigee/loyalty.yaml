@@ -1,0 +1,113 @@
+# Example YAML to get you started quickly.
+# Be aware that YAML has indentation based coping.
+# Code completion support is available so start typing for available options.
+swagger: '2.0'
+
+# This is your document metadata
+info:
+  version: "0.0.1"
+  title: Loyalty API
+  description: |
+    This is an API Loyalty product
+
+host:
+  apijams-emea-3-test.apigee.net
+
+schemes:
+  - https
+securityDefinitions:
+  APIKey:
+    type: apiKey
+    in: query
+    name: apikey
+security:
+  - APIKey: []
+# Describe your paths here
+paths:
+  /v1/loyalty/recommendation/{UserId}:
+    # This is a HTTP operation
+    get:
+      # Describe this verb here. Note: you can use markdown
+      description: |
+        Gets a recommendation for a product of the catalog.
+      # This is array of GET operation parameters:
+      parameters:
+        # An example parameter that is in query and is required
+        - name: UserId
+          in: path
+          description: Id of the user
+          required: true
+          type: string
+      # Expected responses for this operation:
+      responses:
+        # Response code
+        200:
+          description: Successful response
+          schema:
+           $ref: '#/definitions/Recommendation'
+  /v2/loyalty/products/{ProductId}:
+    # This is a HTTP operation
+    get:
+      # Describe this verb here. Note: you can use markdown
+      description: |
+        Gets a recommendation for a product of the catalog.
+      # This is array of GET operation parameters:
+      parameters:
+        # An example parameter that is in query and is required
+        - name: ProductId
+          in: path
+          description: Id of the Product
+          required: true
+          type: string
+      # Expected responses for this operation:
+      responses:
+        # Response code
+        200:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/ProductDefinition'
+definitions:
+  ProductDefinition:
+    type: object
+    properties:
+      id:
+        type: string
+        description: The unic identifier of the product.
+      Name:
+        type: string
+        format: string
+        description: Default name of product.
+      ProductCode:
+        type: string
+        description: The manufacturer’s identifying code.
+      Description:
+        type: string
+        format: string
+        description: A text description of the product.
+      Family:
+        type: string
+        description: Name of the product family associated with this product. 
+      StockKeepingUnit:
+        type: string
+        format: string
+        description: The SKU for the product.
+  Recommendation:
+    type: object
+    properties:
+      id:
+        type: string
+        description: The unic identifier of the product
+  User:
+    type: object
+    properties:
+      id:
+        type: string
+        description: The unic identifier of the user
+      name:
+        type: string
+        description: Name of the user
+      email:
+        type: string
+        description: Email of the user
+
+      
