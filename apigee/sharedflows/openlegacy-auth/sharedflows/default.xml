@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlow name="default">
+    <Step>
+        <Name>SC-OpenLegacy-oAuth</Name>
+    </Step>
+    <Step>
+        <Name>Ev-token</Name>
+    </Step>
+    <Step>
+        <Name>AM-Authorization</Name>
+    </Step>
+</SharedFlow>

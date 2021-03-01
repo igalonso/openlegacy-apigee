@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage continueOnError="false" enabled="true" name="AM-Authorization">
+    <DisplayName>AM-Authorization</DisplayName>
+    <Properties/>
+    <Add>
+        <Headers>
+            <Header name="Authorization">Bearer {openlegacy.token}</Header>
+        </Headers>
+        <FormParams/>
+    </Add>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>

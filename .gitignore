@@ -4,5 +4,5 @@ products.json
 openlegacy/deployment.yaml
 openlegacy/old
 loyalty-backend/
-apigee
 .DS_Store
+apigee/sharedflows/openlegacy-auth/policies/SC-OpenLegacy-oAuth.xml

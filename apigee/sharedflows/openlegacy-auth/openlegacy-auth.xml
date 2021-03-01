@@ -1,0 +1,16 @@
+<SharedFlowBundle revision="5" name="openlegacy-auth">
+    <DisplayName></DisplayName>
+    <Description>openlegacy-auth</Description>
+    <CreatedAt>1614601964378</CreatedAt>
+    <LastModifiedAt>1614601964378</LastModifiedAt>
+    <Policies>
+        <Policy>SC-OpenLegacy-oAuth</Policy>
+        <Policy>Ev-token</Policy>
+        <Policy>AM-Authorization</Policy>
+    </Policies>
+    <Resources></Resources>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+    <subType>SharedFlow</subType>
+</SharedFlowBundle>
