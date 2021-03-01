@@ -5,3 +5,4 @@ openlegacy/deployment.yaml
 openlegacy/old
 loyalty-backend/
 apigee
+.DS_Store
