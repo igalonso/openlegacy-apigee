@@ -1,3 +1,7 @@
 license/APIgee-90.license
 test.sh
 products.json
+openlegacy/deployment.yaml
+openlegacy/old
+loyalty-backend/
+apigee
