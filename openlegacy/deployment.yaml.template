@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: openlegacy-api
+spec:
+  selector:
+    matchLabels:
+      app: openlegacy-api
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: openlegacy-api
+    spec:
+      containers:
+      - name: openlegacy-api
+        image: "gcr.io/<GCP_PROJECT>/openlegacy-api"
+        ports:
+        - containerPort: 8080
